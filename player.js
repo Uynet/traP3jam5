@@ -37,8 +37,8 @@ export default class Player extends Entity{
               Game.state = "RESULT";
             }
           }
+          this.HP++;
         })
-        this.HP++;
     }else{
       this.color.r = 55
     }
