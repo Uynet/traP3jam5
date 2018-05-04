@@ -19,7 +19,7 @@ export default class Game{
   }
   static UpdateResult(){
     if(Input.isKeyInput(84)){
-        let tweet = ["http://twitter.com/intent/tweet?text=",EM.player.HP,"点でした https://stop.uynet.trap.show &hashtags=traP3jam"] ;
+        let tweet = ["http://twitter.com/intent/tweet?text=",EM.player.HP,"点でした http://stop.uynet.trap.show &hashtags=traP3jam"] ;
         let con  =  tweet.join("");
         location.href = (con);
     }
