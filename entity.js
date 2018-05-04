@@ -3,11 +3,14 @@ import Input from "./input.js";
 export default class Entity{
   constructor(pos){
     this.pos = pos;
+    this.color = {
+      r : 20,
+      g : 50,
+      b : 110,
+    }
+    this.size = 32;
+    this.shape = "box";
   }
   Update(){
-    if(Input.isKeyInput(KEY.R)) this.pos.x++;
-    if(Input.isKeyInput(KEY.L)) this.pos.x--;
-    if(Input.isKeyInput(KEY.U)) this.pos.y--;
-    if(Input.isKeyInput(KEY.D)) this.pos.y++;
   }
 }
